@@ -2,9 +2,9 @@
 ## fall-22-mp1-work
 
 
-### Last Name:  
-### First Name: 
-### GitHub Username: 
+### Last Name: Pasichnyak
+### First Name: Volodymyr
+### GitHub Username: VlodPasichnyak11
 
 ---
 #### General Workflow: 

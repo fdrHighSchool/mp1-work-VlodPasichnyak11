@@ -12,26 +12,37 @@ public class UserName {
     // create Scanner object
     Scanner s = new Scanner(System.in);
 
-    // get String input from user
-    System.out.print("Enter your first name: ");
+    System.out.print("Are you a Student or Teacher? ");
+    String choice = s.nextLine();
+    System.out.print("Enter First Name: ");
     String firstName = s.nextLine();
-    System.out.print("Enter your last name: ");
+    System.out.print("Enter Last Name: ");
     String lastName = s.nextLine();
-
-    // test output
-    System.out.println("Hello " + initialize(firstName) + "." + initialize(lastName) + ".");
-
+    System.out.print("Enter Favorite Number: ");
+    int favNum = s.nextInt();
+    
+    if (choice.equals("Student")){
+        System.out.println("Hello " +  getName(firstName) + getInitial(lastName) + favNum + "@nycstudents.net");
+    }
+    else{
+        System.out.println("Hello " +  getInitial(firstName) + getName(lastName) + favNum + "@schools.nyc.gov");
+    }
+    
     s.close();
+    
   } // end main method
 
   /*
    * Name: initialize
-   * Purpose: send back the first character (inital) of a name
+   * Purpose: send back the first character (inital) of a nameß
    * Input: a name (String)
    * Return: a single character (String)
    */
-  public static String initialize(String n) {
+  
+  public static String getInitial(String n) {
     return n.substring(0, 1);
   } // end initialize method
-
+  public static String getName(String n) {
+    return n.substring(0);
+  } // end initialize method
 } // end class
